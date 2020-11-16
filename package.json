@@ -1,0 +1,8 @@
+{
+  "name": "javascriptmethods",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:paulinekors/javascriptmethods.git",
+  "author": "paulinekors",
+  "license": "MIT"
+}
