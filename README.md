@@ -11,3 +11,7 @@ If you wish to make commits and push the code up after cloning this repo, you sh
 ## Install dependencies
 
 In your terminal after you clone your project down, remember to run either `yarn` or `npm install` to build all the dependencies in the project.
+
+## Run tests 
+
+Run `yarn watch` to run all tests and have them automatically rerender when you save your changes.
