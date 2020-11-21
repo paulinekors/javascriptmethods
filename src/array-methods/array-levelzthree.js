@@ -10,7 +10,7 @@
 // You can find all array methods here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // You can find the answers in the answers file, but please try to solve it first without checking the answers
 
-// HINT: You could use map, reduce, filter, join
+// HINT: You could use map, filter, sort, some, join
 
 const friends = [
   {
@@ -18,7 +18,7 @@ const friends = [
     firstName: "Rachel",
     lastName: "Green",
     friendsOnMySpace: 439,
-    favoriteFood: ["Strawberry Cheesecake", "S'mores"],
+    favoriteFood: ["S'mores", "Strawberry Cheesecake"],
   },
   {
     id: 2,
@@ -32,53 +32,55 @@ const friends = [
     firstName: "Joey",
     lastName: "Tribbiani",
     friendsOnMySpace: 929,
-    favoriteFood: ["Non shareable food", "Pizza", "Campbell's Tomato Soup"],
+    favoriteFood: ["Pizza", "Campbell's Tomato Soup", "Non Shareable Food"],
   },
   {
     id: 4,
     firstName: "Chandler",
     lastName: "Bing",
     friendsOnMySpace: 102,
-    favoriteFood: ["Philly cheese steak", "Hamburger", "Pop Tarts"],
+    favoriteFood: ["Philly Cheese Steak", "Hamburger", "Pop Tarts"],
   },
   {
     id: 5,
     firstName: "Monica",
     lastName: "Geller",
     friendsOnMySpace: 565,
-    favoriteFood: ["Grandma's cookies", "Applepie", "Cheez-It"],
+    favoriteFood: ["Applepie", "Grandma's Cookies", "Cheez-It"],
   },
   {
     id: 6,
     firstName: "Gunther",
     lastName: null,
-    age: 7,
+    friendsOnMySpace: 7,
     favoriteFood: ["Pancakes", "Tater Tots"],
   },
 ];
 
-// Show a list of all friends containing only their firstname and lastname
-getNames = (friends) =>
-  friends.map(
-    (friend) =>
-      [friend.firstName, friend.lastName] //
-        .filter((v) => v) // v => v haalt de falsey er uit
-        .join(" ") //  ["Jan", "de Boer"] -> "Jan de Boer"
-  );
+// Returns sorted friends in descending order of number of friendsOnMySpace and changes id to luckyNumber
+const getByPopularity = (friends) => {};
 
-//create new array with only cartoons
-// const cartoonArray = users => {
-//   const cartoons = users.reduce((cartoons, user) => {
-//     return [user.favoriteCartoon, ...cartoons] //reversed list
-//   }, [])
-//   return [...new Set(cartoons)]; //door te spreaden is het weer een array ipv set in array
-// }
-// cartoonArray(users)
+// Returns an array of friends that have the word "cheese" in their favoriteFoods
+const getCheeseLovers = (friends) => {};
 
-// const teenMums = teens => teens
-//   .filter(teen => teen.kids.some(kid => (/Jay/i).test(kid)))
+// Returns an array of all friends containing only their firstname and lastname
+const getNames = (friends) => {};
+
+// Returns an array with friends containing only their firstname and the first word of their first favorite food
+const getNewNames = (friends) => {};
+
+// Returns an array with friends listing their new name (as listed above) and their old name
+const getNewAndOldNames = (friends) => {};
+
+// Lets you change a last name to a new last name (returns an array)
+const getChangedLastName = (friends, lastName, changedLastName) => {};
 
 module.exports = {
   getNames,
   friends,
+  getNewNames,
+  getNewAndOldNames,
+  getChangedLastName,
+  getByPopularity,
+  getCheeseLovers,
 };

@@ -10,7 +10,7 @@ const {
 
 describe("products", () => {
   describe("getProductNames", () => {
-    it("returns an array with productnames", () => {
+    xit("returns an array with productnames", () => {
       expect(getProductNames(products)).toEqual([
         "cucumber",
         "banana",

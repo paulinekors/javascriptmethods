@@ -3,7 +3,7 @@
 // Instructions:
 // Complete the functions below and check to see if your work is correct by
 // running the tests in the testfile (open a terminal window and run
-// "yarn watch" in the correct folder). All tests expect for the first one
+// "yarn watch" in the correct folder). All tests
 // start with "xit", this means that only the first test will run and the
 // rest will be skipped. When you are ready to run the next test, just
 // remove the "x" (so it says "... it("assumption")...".)
@@ -20,33 +20,21 @@ const products = [
 ];
 
 // takes an array and returns an array of productnames
-const getProductNames = (products) => {
-  return products.map((product) => product.name);
-};
+const getProductNames = (products) => {};
 
 // takes an array and returns an array of fruits
-const getFruits = (products) => {
-  return products.filter((product) => product.type === "fruit");
-};
+const getFruits = (products) => {};
 
 // takes an array and returns an array with specific types of products
-const getType = (products, productType) => {
-  return products.filter((product) => product.type === productType);
-};
+const getType = (products, type) => {};
 
 // takes an array and checks if the array contains a specific item (returns boolean)
-const hasProduct = (products, productName) => {
-  return products.some((product) => product.name === productName);
-};
+const hasProduct = (products, name) => {};
 
 // takes an array and checks if every element in the array has a price higher than speficied (returns boolean)
-const areAllMoreExpensive = (products, productName) => {
-  return products.every((product) => product.price > productName);
-};
+const areAllMoreExpensive = (products, price) => {};
 
-const findProduct = (products, productName) => {
-  return products.find((product) => product.name === productName);
-};
+const findProduct = (products, name) => {};
 
 module.exports = {
   products,

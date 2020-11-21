@@ -12,7 +12,7 @@ const {
 
 describe("queens", () => {
   describe("getQueensNames", () => {
-    it("returns an array with queens with firstName and lastName", () => {
+    xit("returns an array with queens with firstName and lastName", () => {
       expect(getQueensNames(queens)).toEqual([
         "Bianca del Rio",
         "Kim Chi",
@@ -180,7 +180,7 @@ describe("queens", () => {
   });
 
   describe("getNickNameChange", () => {
-    it("returns an array with new nickname", () => {
+    xit("returns an array with new nickname", () => {
       expect(getNickNameChange(queens)).toEqual([
         {
           firstName: "Bianca",
