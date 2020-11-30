@@ -10,7 +10,7 @@
 // You can find all object methods here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 // You can find the answers in the answers file, but please try to solve it first without checking the answers
 
-// HINT: You could use Object.entries, Object.values, Object.keys
+// HINT: You could use Object.keys, Object.values, Object.entries and all array methods that we practised in array methods
 
 const doggos = {
   goldenRetriever: {
@@ -50,6 +50,15 @@ const getBorderCollie = (doggos) => doggos.borderCollie;
 
 // Returns a siberian husky
 const getSiberianHusky = (doggos) => doggos["siberianHusky"];
+
+// Returns an array of doggos keys
+const getDoggosKeys = (doggos) => {
+  return Object.keys(doggos);
+};
+
+const getDoggosValues = (doggos) => {
+  return Object.values(doggos);
+};
 
 // Returns the doggo object but changes the fluffLevel of all doggos to 10
 const getDoggosMaxFluff = (doggos) =>
@@ -123,6 +132,8 @@ module.exports = {
   doggos,
   getBorderCollie,
   getSiberianHusky,
+  getDoggosKeys,
+  getDoggosValues,
   getDoggosMaxFluff,
   getDoggosExtraHobby,
   getDoggosEnemy,

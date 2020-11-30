@@ -2,42 +2,95 @@ const {
   doggos,
   getBorderCollie,
   getSiberianHusky,
+  getDoggosKeys,
+  getDoggoValues,
   getDoggosMaxFluff,
   getDoggosExtraHobby,
   getDoggosEnemy,
   getDoggosExcludingBreed,
   getDoggosExcludingBreeds,
+  get,
 } = require("./object");
 
 describe("doggos", () => {
   describe("getBorderCollie", () => {
-    it("returns a border collie", () => {
+    xit("returns a border collie", () => {
       expect(getBorderCollie(doggos)).toEqual({
         breed: "Collie",
         fluffLevel: 8,
         hobbies: ["herding sheep", "playing frisbee"],
       });
     });
-    it("returns undefined when there are no doggos", () => {
+    xit("returns undefined when there are no doggos", () => {
       expect(getBorderCollie({})).toEqual(undefined);
     });
   });
 
   describe("getSiberianHusky", () => {
-    it("returns a siberian husky", () => {
+    xit("returns a siberian husky", () => {
       expect(getSiberianHusky(doggos)).toEqual({
         breed: "Spitz",
         fluffLevel: 7,
         hobbies: ["pulling the sled", "paragliding"],
       });
     });
-    it("returns undefined when there are no doggos", () => {
+    xit("returns undefined when there are no doggos", () => {
       expect(getSiberianHusky({})).toEqual(undefined);
     });
   });
 
+  describe("getDoggosKeys", () => {
+    xit("returns the keys of the doggos object", () => {
+      expect(getDoggosKeys(doggos)).toEqual([
+        "goldenRetriever",
+        "borderCollie",
+        "jackRussel",
+        "japaneseAkita",
+        "siberianHusky",
+      ]);
+    });
+    xit("returns an empty array when there are no doggos", () => {
+      expect(getDoggosKeys({})).toEqual([]);
+    });
+  });
+
+  describe("getDoggosValues", () => {
+    xit("returns the values of the doggos object", () => {
+      expect(getDoggosValues(doggos)).toEqual([
+        {
+          breed: "Retriever",
+          fluffLevel: 9,
+          hobbies: ["swimming", "cuddling"],
+        },
+        {
+          breed: "Collie",
+          fluffLevel: 8,
+          hobbies: ["herding sheep", "playing frisbee"],
+        },
+        {
+          breed: "Terrier",
+          fluffLevel: 4,
+          hobbies: ["stealing food"],
+        },
+        {
+          breed: "Spitz",
+          fluffLevel: 9,
+          hobbies: ["long walks", "guarding the family"],
+        },
+        {
+          breed: "Spitz",
+          fluffLevel: 7,
+          hobbies: ["pulling the sled", "paragliding"],
+        },
+      ]);
+    });
+    xit("returns an empty array when there are no doggos", () => {
+      expect(getDoggosValues({})).toEqual([]);
+    });
+  });
+
   describe("getDoggosMaxFluff", () => {
-    it("returns max fluff doggos", () => {
+    xit("returns max fluff doggos", () => {
       expect(getDoggosMaxFluff(doggos)).toEqual({
         goldenRetriever: {
           breed: "Retriever",
@@ -69,7 +122,7 @@ describe("doggos", () => {
   });
 
   describe("getDoggosEnemy", () => {
-    it("returns doggos with an extra hide and treat hobby", () => {
+    xit("returns doggos with an extra hide and treat hobby", () => {
       expect(getDoggosEnemy(doggos)).toEqual({
         goldenRetriever: {
           breed: "Retriever",
@@ -106,7 +159,7 @@ describe("doggos", () => {
   });
 
   describe("getDoggosExtraHobby", () => {
-    it("returns doggos with an extra hide and treat hobby", () => {
+    xit("returns doggos with an extra hide and treat hobby", () => {
       expect(getDoggosExtraHobby(doggos)).toEqual({
         goldenRetriever: {
           breed: "Retriever",
@@ -138,7 +191,7 @@ describe("doggos", () => {
   });
 
   describe("getDoggosExcludingBreed", () => {
-    it("returns doggos without the indicated breed", () => {
+    xit("returns doggos without the indicated breed", () => {
       expect(getDoggosExcludingBreed(doggos, "Spitz")).toEqual({
         borderCollie: {
           breed: "Collie",
@@ -160,7 +213,7 @@ describe("doggos", () => {
   });
 
   describe("getDoggosExcludingBreeds", () => {
-    it("returns doggos without the indicated breed", () => {
+    xit("returns doggos without the indicated breed", () => {
       expect(getDoggosExcludingBreeds(doggos, ["Spitz", "Terrier"])).toEqual({
         borderCollie: {
           breed: "Collie",
