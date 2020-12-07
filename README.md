@@ -1,6 +1,6 @@
 # Javascript Methods
 
-This project contains tests for empty array, object and string methods. Is it your job to make sure they pass.
+This project contains tests for array, object, regex and string methods. Is it your job to make sure they pass.
 
 ## How to fork and clone
 
