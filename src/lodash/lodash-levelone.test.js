@@ -5,6 +5,7 @@ const {
   getEveryonesFavs,
   getUniqueSongs,
   getBritneyVsMariah,
+  getFlattenedSongs,
 } = require("./lodash-levelone");
 
 describe("Songs", () => {
@@ -44,6 +45,32 @@ describe("Songs", () => {
         "Livin' La Vida Loca",
         "What is Love?",
         "Baby Got Back",
+      ]);
+    });
+  });
+
+  describe("getFlattenedSongs", () => {
+    xit("returns a flattened array with all songs", () => {
+      expect(
+        getFlattenedSongs(
+          britneysFavorites,
+          mariahsFavorites,
+          christinasFavorites
+        )
+      ).toEqual([
+        "Livin' La Vida Loca",
+        "What is Love?",
+        "Baby Got Back",
+        "No Diggity",
+        "Waiting for Tonight",
+        "Waterfalls",
+        "No Diggity",
+        "Ice Ice Baby",
+        "Jump",
+        "MMMBop",
+        "Waterfalls",
+        "Baby Got Back",
+        "No Diggity",
       ]);
     });
   });

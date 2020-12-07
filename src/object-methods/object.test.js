@@ -3,13 +3,12 @@ const {
   getBorderCollie,
   getSiberianHusky,
   getDoggosKeys,
-  getDoggoValues,
+  getDoggosValues,
   getDoggosMaxFluff,
   getDoggosExtraHobby,
   getDoggosEnemy,
   getDoggosExcludingBreed,
   getDoggosExcludingBreeds,
-  get,
 } = require("./object");
 
 describe("doggos", () => {

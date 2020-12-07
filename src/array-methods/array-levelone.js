@@ -3,9 +3,8 @@
 // Instructions:
 // Complete the functions below and check to see if your work is correct by
 // running the tests in the testfile (open a terminal window and run
-// "yarn watch" in the correct folder). All tests
-// start with "xit", this means that only the first test will run and the
-// rest will be skipped. When you are ready to run the next test, just
+// "yarn watch" in the correct folder). All tests start with "xit",
+// this means that they will be skipped. When you are ready to run a test, just
 // remove the "x" (so it says "... it("assumption")...".)
 // You can find all array methods here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // You can find the answers in the answers file, but please try to solve it first without checking the answers
